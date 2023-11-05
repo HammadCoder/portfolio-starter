@@ -1,0 +1,84 @@
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+    height: 77vh;
+    /* width: auto; */
+    margin-top: 18rem;
+     background-color: #1a222f;   
+}
+
+.i-left {
+    display: flex;
+    gap: 1rem;
+    /* position: relative; */
+    /* flex: 1; */
+    flex-direction: column;
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
+}
+
+
+
+.i-left>:nth-child(1) {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+.i-left>:nth-child(2) {
+    color: #b566ff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.i-left>:nth-child(3) {
+    color: var(--gray);
+    font-size: 16px;
+    width: 80%;
+    font-weight: 100;
+    /* margin: 10px 0px; */
+}
+
+
+.contact {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.img-sec>* {
+    transform: scale(0.5);
+}
+
+.img-sec>*:hover {
+    cursor: pointer;
+}
+
+
+.i-right {
+    /* flex: 1; */
+    /* position: relative; */
+    transform: translateX(200%);
+    animation: slide-in 1s forwards;
+}
+
+.i-right>:nth-child(1) {
+    height: 380px;
+    width: 340px;
+    border-radius: 5%;
+    transition: transform 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.i-right>:nth-child(1):hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    /* Increase size by 10% on hover */
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateX(0);
+    }
+}
